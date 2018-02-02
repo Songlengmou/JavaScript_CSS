@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS盒子模型</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 20px;
+            border: 5px solid yellow;
+            padding: 25px;
+            box-sizing: border-box; /* 怪异盒子模型 */
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<!--
+    1.标准盒子模型
+         ①外边距：margin
+         ②内边距：padding
+         ③边框：border
+    2.怪异盒子模型
+         box-sizing
+-->
+<body>
+
+<div class="box"></div>
+<div class="box1"></div>
+
+</body>
+</html>
