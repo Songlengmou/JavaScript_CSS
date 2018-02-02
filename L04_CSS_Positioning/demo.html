@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS定位</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+            /* 绝对定位 */
+            position: absolute;
+            z-index: 997; /* 设置元素的堆叠顺序 */
+        }
+
+        .box1 {
+            width: 120px;
+            height: 70px;
+            background: greenyellow;
+            position: absolute;
+            z-index: 996;
+        }
+
+        p {
+            height: 200px
+        }
+
+        .box2 {
+            width: 100px;
+            height: 150px;
+            left: 300px;
+            background: yellow;
+            position: fixed; /* 固定布局 */
+        }
+    </style>
+</head>
+
+<!--
+
+-->
+<body>
+<div class="box"></div>
+<div class="box1"></div>
+
+<div class="box2"></div>
+
+<p>哈哈</p>
+<p>哈哈</p>
+<p>哈哈</p>
+<p>哈哈</p>
+<p>哈哈</p>
+<p>哈哈</p>
+
+
+</body>
+</html>
