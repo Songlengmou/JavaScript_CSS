@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS基础属性3</title>
+
+    <style>
+        .ul1 {
+            list-style-image: url("picture.png");
+        }
+
+        .ul2 {
+            width: 100px;
+            list-style-position: inside; /* 内部 */
+            /*list-style-position: outside; !* 外部 *!*/
+        }
+
+        .ul3 {
+            list-style-type: decimal; /* 列表项前方排序的标志 这里设置为 数字*/
+        }
+
+        .ul4 {
+            /*list-style: url("picture.png");*/
+            /*list-style: outside;*/
+            list-style: decimal;
+        }
+    </style>
+</head>
+
+<!--
+    列表：
+        list-style:[list-style-image]||[list-style-position]||[list-style-type]
+-->
+
+<body>
+<ul class="ul1">
+    <li>我是具体内容1</li>
+    <li>我是具体内容2</li>
+    <li>我是具体内容3</li>
+    <li>我是具体内容4</li>
+</ul>
+
+<ul class="ul2">
+    <li>我是具体内容1</li>
+    <li>我是具体内容2</li>
+    <li>我是具体内容3</li>
+    <li>我是具体内容4</li>
+</ul>
+
+<ul class="ul3">
+    <li>我是具体内容1</li>
+    <li>我是具体内容2</li>
+    <li>我是具体内容3</li>
+    <li>我是具体内容4</li>
+</ul>
+
+<ul class="ul4">
+    <li>我是具体内容1</li>
+    <li>我是具体内容2</li>
+    <li>我是具体内容3</li>
+    <li>我是具体内容4</li>
+</ul>
+</body>
+</html>
