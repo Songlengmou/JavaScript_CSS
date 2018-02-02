@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS基础属性2</title>
+
+    <style>
+        .p1 {
+            font-style: normal; /* 默认值 */
+        }
+
+        .p2 {
+            font-style: italic;
+        }
+
+        .p3 {
+            font-style: oblique;
+        }
+
+        /* 一般只用加粗和正常 */
+        .p4 {
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .p5 {
+            font-family: "Adobe 繁黑體 Std B"; /* 字体样式 */
+        }
+
+        /* 复合属性 */
+        .p6 {
+            font: normal 700 20px "Adobe 仿宋 Std R";
+        }
+
+        /***************文本*******************/
+        .p7 {
+            text-indent: 50px; /* 缩进 */
+        }
+
+        .p8 {
+            height: 80px;
+            width: 300px;
+            border: 1px solid red; /* solid 边框样式*/
+            text-overflow: ellipsis; /* 文本溢出 */
+            overflow: hidden; /*  text-overflow与 overflow 是一起的   若单纯地写没有效果*/
+            white-space: nowrap; /* 会出现"......."样式 */
+        }
+
+        .p9 {
+            /*
+                capitalize:首字母大写
+                uppercase:字母都为大写
+                lowercase:字母都为小写
+             */
+            text-transform: lowercase;
+        }
+
+        .p10 {
+            /*
+                  underline:下划线
+                  overline:上划线
+                  line-through:删除线; 中划线; 贯穿线; 当中划线; 加删除线;
+             */
+            text-decoration: line-through;
+        }
+
+        .p11 {
+            /* 2px代表模糊度  */
+            text-shadow: 5px 5px 2px red; /* 设置或检索对象中文本的文字是否有阴影及模糊效果 */
+        }
+
+        .p12 {
+            word-spacing: 10px; /* 单词之间的间隔 */
+        }
+
+        .p13 {
+            letter-spacing: 10px; /* 文本中各个字体的间隔 */
+        }
+
+        .p14 {
+            width: 60px;
+            height: 80px;
+            word-wrap: break-word; /* break-word:折行 */
+        }
+    </style>
+</head>
+
+<!--
+     1.字体
+        font：复合属性
+           顺序：style  weight  size  family
+     2.文本
+-->
+
+<body>
+<p class="p1">内容部分</p>
+<p class="p2">内容部分</p>
+<p class="p3">内容部分</p>
+<p class="p4">内容部分</p>
+<p class="p5">内容部分</p>
+<p class="p6">内容部分</p>
+<!--文本-->
+<p class="p7">习近平首先请特雷莎·梅转达对伊丽莎白二世女王的亲切问候和良好祝愿。习近平指出，英国是最早承认新中国的西方大国。建交以来，两国各领域合作硕果累累。</p>
+<p class="p8">习近平首先请特雷莎·梅转达对伊丽莎白二世女王的亲切问候和良好祝愿。习近平指出，英国是最早承认新中国的西方大国。建交以来，两国各领域合作硕果累累。</p>
+<p class="p9">this is my parents.</p>
+<p class="p10">习近平首先请特雷莎·梅转达对伊丽莎白二世女王的亲切问候和良好祝愿。习近平指出，英国是最早承认新中国的西方大国。建交以来，两国各领域合作硕果累累。</p>
+<p class="p11">习近平首先请特雷莎·梅转达对伊丽莎白二世女王的亲切问候和良好祝愿。习近平指出，英国是最早承认新中国的西方大国。建交以来，两国各领域合作硕果累累。</p>
+<p class="p12">this is my parents.</p>
+<p class="p13">习近平首先请特雷莎·梅转达对伊丽莎白二世女王的亲切问候和良好祝愿。习近平指出，英国是最早承认新中国的西方大国。建交以来，两国各领域合作硕果累累。</p>
+<p class="p14">习近平首先请特雷莎·梅转达对伊丽莎白二世女王的亲切问候和良好祝愿。习近平指出，英国是最早承认新中国的西方大国。建交以来，两国各领域合作硕果累累。</p>
+</body>
+</html>
