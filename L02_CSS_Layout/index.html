@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>布局</title>
+
+    <style>
+        .testdisplay {
+            /*display: inline-block;*/
+            display: block;
+            width: 100px;
+            height: 60px;
+            background: yellow;
+        }
+
+        .divdisplay {
+            /*display: inline-block;*/
+            width: 100px;
+            height: 60px;
+            background: red;
+        }
+
+        .divfloat {
+            float: right;
+            width: 100px;
+            height: 60px;
+            background: greenyellow;
+        }
+
+        /*
+           在当前添加浮动的元素的父级上添加一个清除浮动的属性
+             clear:both  清除左右移动    left：清除左移动  right：清除右移动
+         */
+        .ulfloat {
+            clear: both;
+            overflow: hidden;
+        }
+
+        .ulfloat li {
+            float: left;
+            list-style: none;
+            margin: 5px;
+        }
+
+        .show {
+            /*visibility: hidden;*/
+            display: none;
+        }
+
+        .testverflow {
+            width: 100px;
+            height: 80px;
+            border: #ee6633 1px solid;
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<!--
+      1.display
+      2.float:浮动
+         ①文档流
+         ②脱离文档流
+      3.如果display属性设置为none 当前元素也是不可见的
+        那么，display:none与visibility:hidden 区别
+           display:none;不可见时，元素不占位
+           visibility:hidden; 不可见时，元素依然占位
+-->
+<body>
+
+<a href="#" class="testdisplay">这是一个文本</a>
+
+<div class="divdisplay">我是一个文本</div>
+
+<div class="divfloat">这是一个添加了浮动的元素</div>
+<ul class="ulfloat">
+    <li><a href="#">导航</a></li>
+    <li><a href="#">新闻</a></li>
+    <li><a href="#">电影</a></li>
+</ul>
+<!--要在上述所说的 父级上添加 clear属性-->
+<p>哈哈</p>
+<p>嘿嘿</p>
+
+<div class="show">我是一个猴子</div>
+
+<div class="testverflow">习近平首先请特雷莎·梅转达对伊丽莎白二世女王的亲切问候和良好祝愿。习近平指出，英国是最早承认新中国的西方大国。建交以来，两国各领域合作硕果累累。</div>
+</body>
+</html>
