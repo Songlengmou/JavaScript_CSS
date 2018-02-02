@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS基础属性1</title>
+
+    <style>
+        .colorp {
+            /*color:red; 不建议这样写  */
+            /*color: #ff00ff;*/
+            /*color: rgb(10,205,105);*/
+            /*color: rgba(10,205,105,0.5);*/
+            /*color: transparent;!* transparent:透明属性 *!*/
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<!---------------------------------------------颜色--------------------------------------------->、
+<!--
+   color:
+      1.名称：red
+      2.十六进制：#ff00ff
+      3.RGB：颜色通道   (rgb(10,205,105)    它的取值范围是0~255)
+      4.RGBA:颜色通道   (rgba(10,205,105,0.5)   A代表透明度，范围是0~1)
+      5.opacity:透明度  取值范围是0~1
+
+      注：
+        RGBA与opacity区别：在于背景使用上
+-->
+<body>
+<p class="colorp">关于颜色值的测试</p>
+</body>
+</html>

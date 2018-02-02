@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS基础属性1</title>
+
+    <style>
+        .container {
+            width: 100%;
+            height: 800px;
+
+            /*--------------------------------背景------------------------------------------------*/
+            /*
+               法一：
+            */
+            /*background-color: red;*/
+            /*background-image: url("img.jpg");*/
+            /*background-repeat: no-repeat; !*图片重复  这里设置为不重复*!*/
+            /*background-position: center; !*位置*!*/
+            /*background-size: cover;!*尺寸*!*/
+            /*background-attachment: fixed;!*fixed表示滚动条动图片不动*!*/
+
+            /*
+                法二：
+                因为上述比较麻烦，所以可用background 复合属性来直接写
+                顺序为：image  repeat  attachment  position
+            */
+            background: url("img.jpg") no-repeat fixed center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+</div>
+
+</body>
+</html>
