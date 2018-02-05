@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音符跳动</title>
+
+    <style>
+        .demo_music .jump {
+            width: 80px;
+            height: 50px;
+            position: absolute;
+            top: 12px;
+            left: 12px;
+        }
+
+        .demo_music .jump li {
+            position: relative;
+            float: left;
+            height: 100%;
+            width: 12%;
+            overflow: hidden;
+            margin-right: 1px;
+        }
+
+        .demo_music .jump li span {
+            position: absolute;
+            bottom: 0;
+            display: block;
+            height: 100%;
+            width: 100px;
+            background: radial-gradient(transparent 50%, rgba(255, 162, 162, 0.8)); /* radial-gradient()线性渐变 */
+        }
+
+        /* 动画 */
+        @keyframes jump {
+            10% {
+                height: 20%;
+            }
+            20% {
+                height: 60%;
+            }
+            40% {
+                height: 40%;
+            }
+            60% {
+                height: 100%;
+            }
+            80% {
+                height: 10%;
+            }
+            100% {
+                height: 50%;
+            }
+        }
+
+        /*因动画也存在版本兼容问题,都需要加    这里我就不一一添加了*/
+        @-webkit-keyframes jump {
+            10% {
+                height: 20%;
+            }
+            20% {
+                height: 60%;
+            }
+            40% {
+                height: 40%;
+            }
+            60% {
+                height: 100%;
+            }
+            80% {
+                height: 10%;
+            }
+            100% {
+                height: 50%;
+            }
+        }
+
+        .demo_music .jump .li1 span {
+            animation: jump 0.6s linear 0s infinite; /* infinite:循环播放 */
+            -webkit-animation: jump 0.6s linear 0s infinite;
+        }
+
+        .demo_music .jump .li2 span {
+            animation: jump 0.9s linear 0.3s infinite; /* 0.3s：延时 */
+            -webkit-animation: jump 0.9s linear 0.3s infinite;
+        }
+
+        .demo_music .jump .li3 span {
+            animation: jump 1.0s linear 0s infinite;
+            -webkit-animation: jump 1.0s linear 0s infinite;
+        }
+
+        .demo_music .jump .li4 span {
+            animation: jump 0.5s linear 0.6s infinite;
+            -webkit-animation: jump 0.5s linear 0.6s infinite;
+        }
+
+        .demo_music .jump .li5 span {
+            animation: jump 1.6s linear 0s infinite;
+            -webkit-animation: jump 1.6s linear 0s infinite;
+        }
+    </style>
+
+</head>
+<body>
+<div class="demo_music">
+    <div class="music">
+        <ul class="jump">
+            <li class="li1"><span class="ani-li"></span></li>
+            <li class="li2"><span class="ani-li"></span></li>
+            <li class="li3"><span class="ani-li"></span></li>
+            <li class="li4"><span class="ani-li"></span></li>
+            <li class="li5"><span class="ani-li"></span></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
