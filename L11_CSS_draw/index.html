@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绘制图形</title>
+
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+            border-left: 100px solid red; /* transparent：透明 */
+            border-right: 100px solid yellow;
+            border-top: 100px solid blue;
+            border-bottom: 100px solid green;
+        }
+
+        /* 三角形 */
+        .box2 {
+            width: 0px;
+            height: 0px;
+            border-left: 100px solid transparent; /* transparent：透明 */
+            border-right: 100px solid transparent;
+            border-top: 100px solid blue;
+        }
+
+        /* 梯形 */
+        .box3 {
+            width: 50px;
+            height: 0px;
+            border-left: 100px solid transparent; /* transparent：透明 */
+            border-right: 100px solid transparent;
+            border-top: 100px solid blue;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+</body>
+</html>
