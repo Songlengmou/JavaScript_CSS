@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画效果</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: rebeccapurple;
+            animation: anim 5000ms ease 1000ms 2;
+        }
+
+        /*
+            过渡和动画的区别：
+               过渡不可控，动画可控
+        */
+
+        /*
+            @keyframes
+        */
+        @keyframes anim {
+            /* 1. */
+            /*form {*/
+            /*width: 100px;*/
+            /*height: 100px;*/
+            /*transform: rotate(0deg);*/
+            /*}*/
+            /*to {*/
+            /*width: 300px;*/
+            /*height: 300px;*/
+            /*transform: rotate(360deg);*/
+            /*}*/
+
+            /* 2. */
+            0% {
+                background: red;
+            }
+            25% {
+                background: yellow;
+            }
+            50% {
+                background: deepskyblue;
+            }
+            75% {
+                background: greenyellow;
+            }
+            100% {
+                background: deeppink;
+            }
+
+        }
+    </style>
+</head>
+<!--
+      animation:        名称和时间是必须有的 其他根据需求
+        名称：animation-name
+        时间：animation-duration
+        曲线：animation-timing-function
+        延时：animation-delay
+        次数：animation-iteration-count
+        反向：animation-direction
+-->
+<body>
+<div class="box"></div>
+
+</body>
+</html>
