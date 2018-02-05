@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--手动添加的
+     说明：
+         1.强制让文档与设备的宽度保持 1:1 ；
+         2.文档最大的宽度比列是1.0（ initial-scale 初始刻度值和 maximum-scale 最大刻度值）；
+         3.user-scalable 定义用户是否可以手动缩放（ no 为不缩放），使页面固定设备上面的大小；
+    -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>媒体查询</title>
+
+    <style>
+        /* 手机端 */
+        @media screen and (max-width: 640px) {
+            .box {
+                width: 200px;
+                height: 300px;
+                background: blue;
+                margin: 20px 20px;
+            }
+        }
+
+        /* pad端 */
+        @media screen and (min-width: 640px) and (max-width: 800px) {
+            .box {
+                width: 200px;
+                height: 300px;
+                background: yellow;
+                margin: 20px 20px;
+            }
+        }
+
+        /* PC端 */
+        @media screen and (min-width: 800px) {
+            .box {
+                float: left;
+                width: 200px;
+                height: 300px;
+                background: red;
+                margin: 20px 20px;
+            }
+        }
+
+    </style>
+</head>
+<!--
+      媒体查询：
+          min-width:最小宽度
+          max-width：最大宽度
+          min-height：最小高度
+          max-height:最大高度
+          eg: @media scree and (min-width:750px) and (max-width:1024px){}
+-->
+<body>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+
+<h1>右键 检查 打开观看手机端和pad端</h1>
+</body>
+</html>
