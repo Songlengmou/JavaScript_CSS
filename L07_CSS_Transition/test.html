@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+
+    <style>
+        body {
+            background: #f1f1f1;
+        }
+
+        .box {
+            width: 200px;
+            height: 300px;
+            background: greenyellow;
+            /*1.*/
+            /*transition-property: all;*/
+            /*transition-duration: 1000ms;*/
+            /*transition-delay: 0ms;*/
+            /*transition-timing-function: ease;*/
+            /*2.*/
+            transition: all 1000ms 0ms ease;
+        }
+
+        .box:hover {
+            transform: translate3d(0, -10px, 0);
+        }
+
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

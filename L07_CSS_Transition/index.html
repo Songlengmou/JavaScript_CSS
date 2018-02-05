@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡效果</title>
+
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            transition-property: all; /* all可以代替下方所添加的所有(width、height(下方指定的))  */
+            transition-duration: 300ms;
+            transition-delay: 0ms;
+            transition-timing-function: linear; /* linear：匀速 */
+        }
+
+        /* hover : 选择器用于选择鼠标指针浮动在上面的元素*/
+        /* 都可以变化   例如：宽 高 背景等等 */
+        .box:hover {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<!--
+    transition:
+       属性：transition-property
+       时间：transition-duration
+       曲线：transition-timing-function
+       延时：transition-delay
+-->
+<body>
+<div class="box"></div>
+</body>
+</html>
